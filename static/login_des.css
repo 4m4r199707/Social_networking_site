@@ -1,0 +1,53 @@
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 20px;
+	min-height: 60px;
+	border-bottom: #e8491d 3px solid;
+}
+
+
+header .highlight{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+
+
+#top_left_logo{
+	padding-left: 20px;
+}
+
+
+
+footer{
+	padding:40px;
+	margin-bottom: 30px;
+	color: #ffffff;
+	background-color: #e8491d;
+	border-top: #808080 3px solid;
+}
+
+
+
+#add_post{
+	background:rgba(0,0,0,0.4);
+}
+
+#friend_list{
+background:rgba(0,0,0,0.15);
+}
+
+
+#friend_req{
+	background:rgba(0,0,0,0.15);
+}
+
+
+#viewpost{
+	background:rgba(0,0,0,0.15);
+}
+
+#addnew_friend{
+	background:rgba(0,0,0,0.15);
+}

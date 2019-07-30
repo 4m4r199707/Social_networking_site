@@ -1,0 +1,217 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+#D90429 - dark red
+
+styles
+
+
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Poiret One', cursive;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Caveat', cursive;
+
+    
+
+    font-family: 'Open Sans', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+*/
+/* global styles -------------------------------------------------------------------------------------*/
+
+
+html{
+    box-sizing: border-box;
+    
+    
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0 ;
+}    
+
+/*--------- header, footer -------------*/
+header{
+    height:65%;
+    width: 100%;
+    background-image: url("profile.png");
+    background-repeat:;
+    background-position: top,right;
+    background-size: contain,cover;
+    background-attachment: fixed;
+    
+   background-color: #5cbfd6;
+    /*background: linear-gradient(180deg, #2B2D42 60%,#EDF2F4  40%);  */
+    padding-top: 40px;
+}
+nav{
+   float: right;
+   width: 100%;
+   background-color: #35424a;
+   border-bottom: #e8491d 3px solid;
+   position: fixed;
+   top:0;
+   z-index: 0;
+
+}
+
+nav a{
+    text-decoration: none;
+    color:#FFFFFF ;
+    font-size: 20px;
+    font-family:'Open Sans', sans-serif;
+    padding-right: 20px;
+    
+
+}
+
+header h1{
+    color: #e8491d;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.combine{
+    float: right;
+    position: relative;
+
+}
+
+header img {
+    border-radius: 50%;
+    width: 250px;
+    height:250px;
+    z-index: 200;
+    border: 2px solid white;
+}
+
+.profilepic{
+    padding: 50px;
+   clear: both;
+    display: inline-block;
+    z-index: 200;
+    
+}
+
+header h2{
+    display: inline;
+    clear: both;
+    margin: 0;
+    color:white;
+    font:bold;
+    font-size: 50px ;
+}
+
+
+
+.headerlinks a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0.5em; 
+    /*background-color: #8D99AE;*/
+    margin-right:23px;
+    /*border-radius: 10px;*/
+    
+}
+
+.headerlinks{
+    width: 100%;
+    margin:0 auto;
+    padding-left: 110px;
+}
+
+
+
+
+
+/*-------------headings------------*/
+h1{
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size:40px;
+
+}
+
+h2{
+font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    
+}
+
+/*----------------section------------*/
+
+.left{
+    width:20%;
+    background:#35424a;
+    text-align: left;
+    display: inline-block;
+    padding-top: 50px;
+    height:100%;
+    border:2px solid black;
+    float: left;
+
+
+}
+
+.left a{
+   
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 20%;  
+
+    
+    /*border-radius: solid 10px; */
+
+}
+
+.leftlink1 .leftlink2{
+    padding: 20px;
+    /*text-align: left;
+    display:inline;
+    width:inherit; 
+    padding-left: 20px;
+    padding-bottom: 20px;*/
+    
+}
+
+.right{
+    text-align: center;
+    width:80%;
+    height:100%;
+    display: inline-block;
+    border:2px solid black;
+    float: left;
+}
+
+
+
+/*later part of designing*/
+
+
+
+
+/*post*/
+
+#display_post{
+    width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: rgba(0,0,0,0.05);
+        border-radius: 1em;
+}
