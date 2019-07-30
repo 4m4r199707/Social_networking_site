@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <title>Edit Your Information</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login_des.css')}}">
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+      #sign_up_box2 {
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 1em;
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }
+    }
+    </style>    
+</head>
+
+<body background="{{url_for('static', filename='background.jpg')}}">
+<header>
+    <div id="top_left_logo"><h1>FRIENDS-<span class="highlight">HUB</span></h1></div>
+</header>
+<center>
+<div id="sign_up_box2">
+	<h1>Edit User Information</h1>
+	<form action={{ url_for("get_new_info") }} method="GET">
+	<p>Name<br>
+        <input type="text" name="name" value="{{name}}"/></p>
+        <p>Select Username<br>
+        <input type="text" name="Username" value="{{username}}"/></p>
+<!--check if username is already present-->
+	<p>School<br>
+        <input type="text" name="school" value="{{school}}" /></p>
+	<p>Place of work<br>
+        <input type="text" name="work" value="{{place_of_work}}"/></p>
+	<p>Marital Status<br>
+        <input type="radio" name="marital" value='M' />Married<br>
+	   <input type="radio" name="marital" value='S' />Single<br></p>
+
+        <p>Password<br>
+        <input type="password"  name="Password" placeholder="Password"/></p>
+        <p>Confirm Password<br>
+        <input type="password"  name="CPassword" placeholder="CPassword"/></p>
+        <p><a href="{{ url_for("get_new_info") }}"><input type="submit" value="Save new Information"></a></p>
+
+		
+	</form>
+</div>
+</center>
+<footer>
+    
+</footer>
+</body>
+</html>
+

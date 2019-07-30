@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <link href = "{{ url_for('static', filename='login_des.css') }}" rel = stylesheet>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    #add_post{
+        width: 600px;
+        margin: 5em auto;
+        padding: 50px;
+        
+        border-radius: 1em;
+    }
+	
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        body {
+            background-color: #fff;
+        }
+        div {
+            width: auto;
+            margin: 0 auto;
+            border-radius: 0;
+            padding: 1em;
+        }}
+    
+    #textboxid
+    {
+    height:100px;
+    font-size:14pt;
+    }
+    </style>    
+</head>
+
+<body background="{{url_for('static', filename='background.jpg')}}">
+<header>
+    <div id="top_left_logo"><h1>FRIENDS-<span class="highlight">HUB</span></h1></div>
+</header>
+<div id="add_post">
+    <h1>ADD A NEW POST</h1>
+    <p>
+	<form action={{url_for("post_file_write")}} method="GET">
+		<textboxid><input type="text" name="content" placeholder="Type post..." id="textboxid"></input></textboxid><br><br>
+		<input type="submit" value="POST" ></input><br><br>
+
+	</form>
+    <form action={{url_for("homepage")}} method="GET">
+        <input type="submit" value="BACK" ></input>
+
+    </form>
+    </p>
+</div>
+<footer>
+    
+</footer>
+</body>
+</html>
+
